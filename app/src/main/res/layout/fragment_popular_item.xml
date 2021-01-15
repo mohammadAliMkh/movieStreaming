@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimaryDark"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="22dp"
+        app:cardBackgroundColor="@color/colorPrimary"
+        app:cardCornerRadius="8dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="4dp"
+            android:background="@color/colorPrimary">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/favorite_fragment_name"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="8dp"
+                android:textSize="14sp"
+                android:maxLines="2"
+                android:layout_toLeftOf="@id/favorite_fragment_rate"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="googooli"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/favorite_fragment_director"
+                android:textSize="14sp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="4dp"
+                android:layout_below="@id/favorite_fragment_name"
+                android:textColor="@color/white"
+                android:text="googooli"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:layout_below="@id/favorite_fragment_director"
+                android:textColor="@color/white"
+                android:id="@+id/x015"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="4dp"
+                android:text="Published: "/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:layout_toRightOf="@id/x015"
+                android:id="@+id/favorite_fragment_publish"
+                android:layout_marginTop="4dp"
+                android:layout_below="@id/favorite_fragment_director"
+                android:textColor="@color/white"
+                android:text="googooli"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="80dp"
+                android:layout_alignParentBottom="true">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    app:srcCompat="@drawable/time_icon"
+                    app:tint="@color/colorAccent" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="4dp"
+                    android:text="2h 30m"
+                    android:id="@+id/favorite_fragment_time"/>
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/comment_icon"
+                app:tint="@android:color/holo_green_dark"
+                android:layout_alignParentRight="true"
+                android:id="@+id/favorite_fragment_comment"
+                android:layout_alignParentBottom="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rate: 8.9/10"
+                android:textStyle="bold"
+                android:id="@+id/favorite_fragment_rate"
+                android:textColor="@color/white"
+                android:layout_alignParentRight="true"
+                android:textSize="14sp" />
+
+
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="80dp"
+        android:layout_height="140dp"
+        app:cardCornerRadius="8dp"
+        app:cardBackgroundColor="@color/colorPrimary"
+        android:layout_margin="4dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            android:layout_height="match_parent"
+            android:id="@+id/favorite_fragment_image"/>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

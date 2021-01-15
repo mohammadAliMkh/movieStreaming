@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/menu_home" android:icon="@drawable/home_icon" android:title="Home"/>
+        <item android:id="@+id/menu_account" android:icon="@drawable/account_icon" android:title="Account"/>
+        <item android:id="@+id/menu_credit" android:icon="@drawable/credit_icon" android:title="Buy Credit"/>
+        <item android:id="@+id/menu_search" android:icon="@drawable/search_icon" android:title="Search"/>
+        <item android:id="@+id/menu_favorite" android:icon="@drawable/favorite_icon" android:title="Favorites"/>
+        <item android:id="@+id/menu_setting" android:icon="@drawable/setting_icon" android:title="Settings"/>
+        <item android:id="@+id/menu_exit" android:icon="@drawable/logout_icon" android:title="Exit"/>
+    </group>
+
+</menu>

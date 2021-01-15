@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimaryDark"
+    android:layout_height="match_parent"
+    tools:context=".view.AccountActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/x046">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Account"
+            android:textSize="16sp"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/back_icon"
+            app:tint="@color/colorAccent"
+            android:layout_marginLeft="4dp"
+            android:id="@+id/back_icon_account"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:cardCornerRadius="8dp"
+        android:id="@+id/x047"
+        app:cardBackgroundColor="@color/colorPrimary"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/x046">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="User Information"
+                    android:textColor="@color/colorAccent"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@color/colorAccent"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:layout_marginTop="16dp"
+                    android:weightSum="4"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="username:"
+                        android:layout_weight="1.5"
+                        android:textColor="@color/colorAccent"
+                        android:fontFamily="monospace"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/account_username_txt"
+                        android:layout_marginLeft="4dp"
+                        android:layout_weight="2.5"
+                        android:gravity="center"
+                        android:fontFamily="monospace"
+                        android:textColor="@android:color/white"
+                        android:text="mamk434"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:weightSum="4"
+                    android:layout_marginTop="4dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1.5"
+                        android:layout_height="wrap_content"
+                        android:text="email:"
+                        android:textColor="@color/colorAccent"
+                        android:fontFamily="monospace"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/account_email_txt"
+                        android:layout_marginLeft="4dp"
+                        android:layout_weight="2.5"
+                        android:gravity="center"
+                        android:fontFamily="monospace"
+                        android:textColor="@android:color/white"
+                        android:text="mamk434@gamil.com"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:padding="4dp"
+                    android:weightSum="4"
+                    android:layout_marginBottom="4dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="phone number:"
+                        android:layout_weight="1.5"
+                        android:textColor="@color/colorAccent"
+                        android:fontFamily="monospace"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/account_phone_txt"
+                        android:layout_marginLeft="4dp"
+                        android:gravity="center"
+                        android:layout_weight="2.5"
+                        android:fontFamily="monospace"
+                        android:textColor="@android:color/white"
+                        android:text="09128400276"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:cardCornerRadius="8dp"
+        android:id="@+id/x048"
+        android:layout_below="@id/x047"
+        app:cardBackgroundColor="@color/colorPrimary"
+        android:layout_marginTop="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Account Detail"
+                android:textColor="@color/colorAccent"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="4dp"
+                android:background="@color/colorAccent"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:padding="4dp"
+                android:weightSum="4"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="account type:"
+                    android:layout_weight="1.5"
+                    android:textColor="@color/colorAccent"
+                    android:fontFamily="monospace"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/account_type_txt"
+                    android:layout_marginLeft="4dp"
+                    android:gravity="center"
+                    android:layout_weight="2.5"
+                    android:textAllCaps="true"
+                    android:fontFamily="monospace"
+                    android:textColor="@android:color/white"
+                    android:text="VIP"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:padding="4dp"
+                android:weightSum="4"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="remain days:"
+                    android:layout_weight="1.5"
+                    android:textColor="@color/colorAccent"
+                    android:fontFamily="monospace"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/account_remain_txt"
+                    android:layout_marginLeft="4dp"
+                    android:gravity="center"
+                    android:layout_weight="2.5"
+                    android:fontFamily="monospace"
+                    android:textColor="@android:color/white"
+                    android:text="41"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:padding="4dp"
+                android:weightSum="4"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="last charge:"
+                    android:layout_weight="1.5"
+                    android:textColor="@color/colorAccent"
+                    android:fontFamily="monospace"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/account_last_charge_txt"
+                    android:layout_marginLeft="4dp"
+                    android:gravity="center"
+                    android:layout_weight="2.5"
+                    android:fontFamily="monospace"
+                    android:textColor="@android:color/white"
+                    android:text="2020/06/11"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:padding="4dp"
+                android:weightSum="4"
+                android:layout_marginBottom="4dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="help us:"
+                    android:layout_weight="1.5"
+                    android:textColor="@color/colorAccent"
+                    android:fontFamily="monospace"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/account_help_txt"
+                    android:layout_marginLeft="4dp"
+                    android:gravity="center"
+                    android:layout_weight="2.5"
+                    android:fontFamily="monospace"
+                    android:textColor="@android:color/white"
+                    android:text="$46"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:text="Buy Credit"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:visibility="gone"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@id/x048"
+        android:backgroundTint="@color/colorAccent"
+        android:layout_marginTop="64dp"
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="false"
+        android:id="@+id/buy_credit_btn"
+        />
+
+
+
+</RelativeLayout>

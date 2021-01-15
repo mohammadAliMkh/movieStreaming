@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/home_drawerLayout"
+    tools:openDrawer="start"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".view.HomeActivity">
+
+    <com.google.android.material.navigation.NavigationView
+        app:menu="@menu/menu_home"
+        app:headerLayout="@layout/header_navigation_home"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:id="@+id/home_navigation"
+        android:background="@color/white"
+        android:layout_gravity="start"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/x012">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@color/colorPrimaryDark"
+            android:id="@+id/x011">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Top Movies"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/menu_icon"
+                app:tint="@color/colorAccent"
+                android:layout_marginLeft="4dp"
+                android:id="@+id/menu_icon_home"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/x011"
+            android:id="@+id/homeSliderSV">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.viewpager.widget.ViewPager
+                        android:layout_width="match_parent"
+                        android:layout_height="220dp"
+                        android:id="@+id/homeSliderVP"/>
+
+                    <com.google.android.material.tabs.TabLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/homeSliderVP"
+                        android:id="@+id/homeSliderTL"
+                        android:background="@android:color/transparent"
+                        android:layout_centerHorizontal="true"
+                        app:tabGravity="fill"
+                        app:tabBackground="@drawable/bg_tab_layout"
+                        app:tabIndicator="@null"
+                        android:layout_marginTop="4dp"/>
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="genre"
+                        android:textColor="@color/white"
+                        android:layout_below="@id/homeSliderTL"
+                        android:textSize="14sp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="4dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="More >"
+                        android:textColor="@color/white"
+                        android:layout_below="@id/homeSliderTL"
+                        android:textSize="14sp"
+                        android:id="@+id/home_more_genre"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="4dp"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_below="@id/home_more_genre"
+                        android:background="@color/colorAccent"/>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/home_more_genre"
+                        android:layout_marginTop="4dp"
+                        android:id="@+id/homeGenreRV"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_below="@id/homeGenreRV"
+                        android:background="@color/colorAccent"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Top IMDb"
+                        android:textColor="@color/white"
+                        android:layout_below="@id/homeGenreRV"
+                        android:textSize="14sp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginLeft="4dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="More >"
+                        android:textColor="@color/white"
+                        android:layout_below="@id/homeGenreRV"
+                        android:textSize="14sp"
+                        android:id="@+id/home_more_IMDb"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginRight="4dp"/>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/home_more_IMDb"
+                        android:layout_marginTop="4dp"
+                        android:id="@+id/homeTopRV"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="popular movies"
+                        android:textColor="@color/white"
+                        android:layout_below="@id/homeTopRV"
+                        android:textSize="14sp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="4dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="More >"
+                        android:textColor="@color/white"
+                        android:layout_below="@id/homeTopRV"
+                        android:textSize="14sp"
+                        android:id="@+id/home_more_popular"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="4dp"/>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/home_more_popular"
+                        android:layout_marginTop="4dp"
+                        android:id="@+id/homePopularRV"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="series"
+                        android:textColor="@color/white"
+                        android:layout_below="@id/homePopularRV"
+                        android:textSize="14sp"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginLeft="4dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="More >"
+                        android:textColor="@color/white"
+                        android:layout_below="@id/homePopularRV"
+                        android:textSize="14sp"
+                        android:id="@+id/home_more_series"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginRight="4dp"/>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/home_more_series"
+                        android:layout_marginTop="4dp"
+                        android:id="@+id/homeSeriesRV"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="animations"
+                        android:textColor="@color/white"
+                        android:layout_below="@id/homeSeriesRV"
+                        android:textSize="14sp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="4dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="More >"
+                        android:textColor="@color/white"
+                        android:layout_below="@id/homeSeriesRV"
+                        android:textSize="14sp"
+                        android:id="@+id/home_more_animation"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="4dp"/>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/home_more_animation"
+                        android:layout_marginTop="4dp"
+                        android:id="@+id/homeAnimationRV"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

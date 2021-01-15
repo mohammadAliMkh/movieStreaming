@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".fragment.CategorySearchFragment">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        app:cardCornerRadius="8dp"
+        android:id="@+id/action_cardView"
+        app:cardBackgroundColor="@color/colorPrimary">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:id="@+id/x027"
+                app:srcCompat="@raw/action"
+                android:layout_centerInParent="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="4dp"
+                android:layout_below="@id/x027"
+                android:layout_centerInParent="true"
+                android:text="Action"
+                android:gravity="center_horizontal"
+                android:textColor="@color/colorAccent"/>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        app:cardCornerRadius="8dp"
+        android:id="@+id/drama_cardView"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="8dp"
+        app:cardBackgroundColor="@color/colorPrimary">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:id="@+id/x028"
+                app:srcCompat="@raw/drama"
+                android:layout_centerInParent="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="4dp"
+                android:layout_below="@id/x028"
+                android:layout_centerInParent="true"
+                android:text="Drama"
+                android:gravity="center_horizontal"
+                android:textColor="@color/colorAccent"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        app:cardCornerRadius="8dp"
+        android:id="@+id/crime_cardView"
+        android:layout_centerInParent="true"
+        android:layout_alignParentLeft="true"
+        app:cardBackgroundColor="@color/colorPrimary">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:id="@+id/x029"
+                app:srcCompat="@raw/crime"
+                android:layout_centerInParent="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_marginTop="4dp"
+                android:textStyle="bold"
+                android:layout_below="@id/x029"
+                android:layout_centerInParent="true"
+                android:text="Crime"
+                android:gravity="center_horizontal"
+                android:textColor="@color/colorAccent"/>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        app:cardCornerRadius="8dp"
+        android:id="@+id/war_cardView"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        app:cardBackgroundColor="@color/colorPrimary">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:id="@+id/x030"
+                app:srcCompat="@raw/war"
+                android:layout_centerInParent="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_below="@id/x030"
+                android:layout_marginTop="4dp"
+                android:layout_centerInParent="true"
+                android:text="War"
+                android:gravity="center_horizontal"
+                android:textColor="@color/colorAccent"/>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        app:cardCornerRadius="8dp"
+        android:id="@+id/animation_cardView"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="16dp"
+        app:cardBackgroundColor="@color/colorPrimary">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:id="@+id/x031"
+                app:srcCompat="@raw/animation"
+                android:layout_centerInParent="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="4dp"
+                android:layout_below="@id/x031"
+                android:layout_centerInParent="true"
+                android:text="Animation"
+                android:gravity="center_horizontal"
+                android:textColor="@color/colorAccent"/>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        app:cardCornerRadius="8dp"
+        android:id="@+id/series_cardView"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="8dp"
+        android:layout_alignParentBottom="true"
+        app:cardBackgroundColor="@color/colorPrimary">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:id="@+id/x032"
+                app:srcCompat="@raw/comedy"
+                android:layout_centerInParent="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_below="@id/x032"
+                android:layout_marginTop="4dp"
+                android:layout_centerInParent="true"
+                android:text="Comedy"
+                android:gravity="center_horizontal"
+                android:textColor="@color/colorAccent"/>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

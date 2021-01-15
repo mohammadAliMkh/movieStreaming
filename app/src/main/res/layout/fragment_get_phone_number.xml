@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@raw/bg_entry"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.4"
+        android:background="@color/colorPrimaryDark"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/x041"
+        android:layout_marginBottom="280dp"
+        android:padding="32dp"
+        android:background="@drawable/bg_entry">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Your phone number"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_alignLeft="@id/x038"
+            android:layout_alignRight="@id/pin_phone_number"
+            android:layout_marginTop="16dp"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/x037"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:id="@+id/x038"
+            android:layout_alignTop="@id/pin_phone_number"
+            android:layout_alignBottom="@id/pin_phone_number"
+            android:gravity="center_vertical"
+            android:textColor="@color/colorAccent"
+            android:text="0  9"
+            android:layout_below="@id/x037"/>
+
+
+            <com.chaos.view.PinView
+                android:id="@+id/pin_phone_number"
+                style="@style/PinWidget.PinView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:cursorVisible="true"
+                android:layout_marginLeft="4dp"
+                android:inputType="phone"
+                android:gravity="center_vertical"
+                android:layout_toRightOf="@id/x038"
+                android:layout_below="@id/x037"
+                android:layout_marginTop="16dp"
+                android:layout_centerHorizontal="true"
+                android:itemBackground="@android:color/transparent"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:cursorColor="@color/colorAccent"
+                app:cursorWidth="2dp"
+                app:hideLineWhenFilled="true"
+                app:itemCount="9"
+                app:itemHeight="36dp"
+                app:itemRadius="4dp"
+                app:itemSpacing="0dp"
+                app:itemWidth="28dp"
+                app:lineColor="@color/colorAccent"
+                app:lineWidth="2dp"
+                app:viewType="rectangle"/>
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="send code"
+            android:layout_below="@id/pin_phone_number"
+            android:layout_alignRight="@id/pin_phone_number"
+            android:background="@drawable/bg_pin_btn"
+            android:id="@+id/sendCodeBtn"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="28dp"
+        android:layout_marginLeft="28dp"
+        android:visibility="gone"
+        android:id="@+id/x040"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="280dp"
+        android:padding="32dp"
+        android:background="@drawable/bg_entry">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Your Validation Code"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/x039"/>
+
+        <com.chaos.view.PinView
+            android:id="@+id/pin_entry"
+            style="@style/PinWidget.PinView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:cursorVisible="true"
+            android:inputType="phone"
+            android:layout_below="@id/x039"
+            android:layout_marginTop="16dp"
+            android:layout_centerHorizontal="true"
+            android:itemBackground="@android:color/transparent"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:cursorColor="@color/colorAccent"
+            app:cursorWidth="2dp"
+            app:hideLineWhenFilled="true"
+            app:itemCount="4"
+            app:itemHeight="64dp"
+            app:itemRadius="4dp"
+            app:itemSpacing="0dp"
+            app:itemWidth="64dp"
+            app:lineColor="@color/colorAccent"
+            app:lineWidth="2dp"
+            app:viewType="rectangle"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="retry"
+            android:layout_marginTop="16dp"
+            android:layout_below="@id/pin_entry"
+            android:layout_alignLeft="@id/pin_entry"
+            android:background="@drawable/bg_pin_btn"
+            android:id="@+id/retryPin"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Next"
+            android:layout_below="@id/pin_entry"
+            android:layout_alignRight="@id/pin_entry"
+            android:background="@drawable/bg_pin_btn"
+            android:id="@+id/nextPin"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

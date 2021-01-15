@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_header_home">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:alpha="0.4"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="32dp"
+        android:padding="12dp"
+        android:background="@drawable/bg_profile_photo"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/add_photo_icon"
+        android:id="@+id/profile_image_home_navigation"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="32dp"
+        android:visibility="gone"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="1dp"
+        android:id="@+id/profile_image_home_navigation1"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_marginLeft="8dp"
+        android:textColor="@color/white"
+        android:layout_below="@id/profile_image_home_navigation"
+        android:layout_marginTop="12dp"
+        android:id="@+id/home_username_TV"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="8dp"
+        android:layout_below="@id/home_username_TV"
+        android:layout_marginTop="4dp"
+        android:id="@+id/home_phoneNumber_TV"/>
+
+
+</RelativeLayout>

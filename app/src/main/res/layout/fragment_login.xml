@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@raw/bg_entry"
+    tools:context=".fragment.LoginFragment">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.4"
+        android:background="@color/colorPrimaryDark"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/x035"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/colorAccent"
+            android:layout_centerHorizontal="true"
+            android:text="WELCOME TO THE TOP MOVIES"
+            android:id="@+id/x034"
+            android:layout_marginTop="32dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:layout_below="@id/x034"
+            android:layout_marginTop="4dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="32dp"
+            android:text="Watch Your Favorite Movies And Series"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="240dp"
+        android:padding="28dp"
+        android:id="@+id/x036"
+        android:background="@drawable/bg_entry"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginLeft="4dp"
+                app:srcCompat="@drawable/account_icon"
+                android:layout_gravity="center_vertical"
+                app:tint="@color/colorAccent"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="username"
+                android:background="@null"
+                android:textColor="@color/white"
+                android:layout_gravity="center_vertical"
+                android:textSize="14sp"
+                android:inputType="text"
+                android:textColorHint="@color/white"
+                android:layout_marginLeft="8dp"
+                android:id="@+id/entry_usernameET"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorAccent"
+            android:layout_marginTop="8dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginLeft="4dp"
+                app:srcCompat="@drawable/password_icon"
+                android:layout_gravity="center_vertical"
+                app:tint="@color/colorAccent"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="password"
+                android:layout_gravity="center_vertical"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:background="@null"
+                android:inputType="numberPassword"
+                android:textColorHint="@color/white"
+                android:layout_marginLeft="8dp"
+                android:id="@+id/entry_passwordET"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorAccent"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="32dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Don't have an account? "
+                android:textColor="@color/white"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Register"
+                android:textColor="@color/colorAccent"
+                android:textSize="12sp"
+                android:id="@+id/go_to_register"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot Your Password?!"
+            android:textColor="@color/colorAccent"
+            android:textSize="12sp"
+            android:layout_marginTop="8dp"
+            android:id="@+id/forgot_password"/>
+
+    </LinearLayout>
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="login"
+        android:id="@+id/loginBtn"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="180dp"
+        android:layout_marginRight="36dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@drawable/bf_button_entry"/>
+
+
+
+</RelativeLayout>

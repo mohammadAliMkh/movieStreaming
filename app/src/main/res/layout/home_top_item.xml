@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="160dp"
+    android:layout_height="220dp"
+    android:id="@+id/root_home_top_view"
+    android:layout_margin="4dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimaryDark">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="8dp"
+        app:cardBackgroundColor="@color/colorPrimaryDark">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="4dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/homeTopIV"
+                android:scaleType="fitXY"/>
+
+            <eightbitlab.com.blurview.BlurView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/homeTopItemBV"
+                android:layout_alignParentBottom="true">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorAccent"
+                        android:id="@+id/homeTopItemNameTV"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:maxLines="2" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:layout_alignParentBottom="true">
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_gravity="center_vertical"
+                            app:srcCompat="@drawable/time_icon"
+                            app:tint="@color/colorAccent" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorAccent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="4dp"
+                            android:id="@+id/homeTopItemTimeTV"/>
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </eightbitlab.com.blurview.BlurView>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

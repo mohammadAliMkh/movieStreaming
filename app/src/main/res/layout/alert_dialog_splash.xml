@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Internet Is Not Connected!"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@raw/internet"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:id="@+id/x042"
+        android:tint="@color/colorAccent"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorAccent"
+        android:padding="4dp"
+        android:text="Retry"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@id/x042"
+        android:id="@+id/retry_button_splash"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

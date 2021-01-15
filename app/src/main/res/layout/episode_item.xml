@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimaryDark"
+    android:id="@+id/root_item_episode"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:cardCornerRadius="8dp"
+        android:layout_margin="4dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/episode_img"
+                android:scaleType="fitXY"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/download_icon"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="4dp"
+                android:tint="@color/colorAccent"
+                android:id="@+id/episode_download"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/black"
+                android:alpha="0.2"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                app:srcCompat="@drawable/play_icon"
+                app:tint="@color/colorAccent"
+                android:layout_centerInParent="true"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="name"
+                android:textSize="14sp"
+                android:gravity="center_horizontal"
+                android:textColor="@color/white"
+                android:id="@+id/episode_name"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/episode_name"
+                android:text="EP 01"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/white"
+                android:id="@+id/episode_number"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

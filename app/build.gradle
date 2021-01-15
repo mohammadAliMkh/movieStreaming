@@ -1,0 +1,125 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdkVersion 29
+
+    defaultConfig {
+        applicationId "com.example.moviestreaming"
+        minSdkVersion 21
+        targetSdkVersion 29
+        multiDexEnabled true
+        versionCode 1
+        versionName "1.0"
+        vectorDrawables.useSupportLibrary = true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.navigation:navigation-fragment:2.3.1'
+    implementation 'androidx.navigation:navigation-ui:2.3.1'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    implementation 'com.android.volley:volley:1.1.1'
+
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    // Because RxAndroid releases are few and far between, it is recommended you also
+    // explicitly depend on RxJava's latest version for bug fixes and new features.
+    // (see https://github.com/ReactiveX/RxJava/releases for latest 3.x.x version)
+    implementation 'io.reactivex.rxjava2:rxjava:2.1.7'
+
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+    implementation 'com.eightbitlab:blurview:1.6.5'
+
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    implementation 'com.flaviofaria:kenburnsview:1.0.7'
+
+    implementation 'com.google.android.exoplayer:exoplayer:2.12.2'
+
+    implementation "androidx.media:media:1.2.1"
+
+    def lifecycle_version = "2.2.0"
+    def arch_version = "2.1.0"
+
+    // ViewModel
+    implementation "androidx.lifecycle:lifecycle-viewmodel:$lifecycle_version"
+    // LiveData
+    implementation "androidx.lifecycle:lifecycle-livedata:$lifecycle_version"
+    // Lifecycles only (without ViewModel or LiveData)
+    implementation "androidx.lifecycle:lifecycle-runtime:$lifecycle_version"
+
+    // Saved state module for ViewModel
+    implementation "androidx.lifecycle:lifecycle-viewmodel-savedstate:$lifecycle_version"
+
+    // Annotation processor
+    annotationProcessor "androidx.lifecycle:lifecycle-compiler:$lifecycle_version"
+    // alternately - if using Java8, use the following instead of lifecycle-compiler
+    implementation "androidx.lifecycle:lifecycle-common-java8:$lifecycle_version"
+
+    // optional - helpers for implementing LifecycleOwner in a Service
+    implementation "androidx.lifecycle:lifecycle-service:$lifecycle_version"
+
+    // optional - ProcessLifecycleOwner provides a lifecycle for the whole application process
+    implementation "androidx.lifecycle:lifecycle-process:$lifecycle_version"
+
+    // optional - ReactiveStreams support for LiveData
+    implementation "androidx.lifecycle:lifecycle-reactivestreams:$lifecycle_version"
+
+    // optional - Test helpers for LiveData
+    testImplementation "androidx.arch.core:core-testing:$arch_version"
+
+    def room_version = "2.2.5"
+
+    implementation "androidx.room:room-runtime:$room_version"
+    annotationProcessor "androidx.room:room-compiler:$room_version"
+
+    // optional - RxJava support for Room
+    implementation "androidx.room:room-rxjava2:$room_version"
+
+    // optional - Guava support for Room, including Optional and ListenableFuture
+    implementation "androidx.room:room-guava:$room_version"
+
+    // optional - Test helpers
+    testImplementation "androidx.room:room-testing:$room_version"
+
+    implementation 'com.chaos.view:pinview:1.4.4'
+
+    implementation 'com.airbnb.android:lottie:3.5.0'
+
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+
+    implementation 'com.caverock:androidsvg-aar:1.4'
+
+    implementation ('com.zarinpal:purchase:0.0.8-beta')
+            { exclude group: 'com.mcxiaoke.volley', module: 'library' }
+
+    implementation 'com.karumi:dexter:6.2.2'
+
+
+
+
+}

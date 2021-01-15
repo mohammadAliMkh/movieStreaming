@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="248dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="4dp"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp"
+    android:background="@color/colorPrimaryDark">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="4dp"
+        app:cardBackgroundColor="@color/colorPrimaryDark"
+        android:id="@+id/x003"
+        app:cardCornerRadius="8dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:id="@+id/homePopularIV"/>
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/x003">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:layout_weight="1"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:maxLines="1"
+                android:id="@+id/homePopularNameTV"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_weight="1"
+                android:layout_marginRight="4dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    app:srcCompat="@drawable/time_icon"
+                    android:layout_marginTop="4dp"
+                    android:layout_weight="0.5"
+                    android:id="@+id/x004"
+                    app:tint="@color/colorAccent"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorAccent"
+                    android:layout_toRightOf="@id/x004"
+                    android:layout_weight="5"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:id="@+id/homePopularTimeTV"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/colorAccent"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="24dp"
+                    android:id="@+id/homePopularRateTV"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
