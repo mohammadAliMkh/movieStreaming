@@ -36,6 +36,8 @@ public class CommentActivity extends AppCompatActivity {
 
         //comment activity part
 
+        //sample
+
         Bundle bundle = getIntent().getExtras();
         username = bundle.getString("username");
         id_movie = bundle.getString("id");
