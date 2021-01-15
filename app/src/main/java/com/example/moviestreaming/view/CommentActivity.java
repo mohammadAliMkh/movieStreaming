@@ -44,6 +44,7 @@ public class CommentActivity extends AppCompatActivity {
         send_img = findViewById(R.id.send_comment_img);
         back_icon = findViewById(R.id.back_icon_comment);
 
+        // back icon of the comment
         back_icon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -51,14 +52,15 @@ public class CommentActivity extends AppCompatActivity {
             }
         });
 
-
+        //send the comment to the server
         send_img.setOnClickListener(new View.OnClickListener() {
             @RequiresApi(api = Build.VERSION_CODES.O)
             @Override
             public void onClick(View view) {
 
                 if(comment_EDT.getText().toString().trim().isEmpty()){
-                    Toast.makeText(CommentActivity.this, "no comment!!!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(CommentActivity.this, "no comment, please write your comment!!!", Toast.LENGTH_SHORT).show();
+
                     comment_EDT.requestFocus();
 
                 }else{
