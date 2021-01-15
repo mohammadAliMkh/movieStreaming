@@ -35,6 +35,8 @@ public class CommentActivity extends AppCompatActivity {
         // commnet part
 
         //comment activity part
+        
+        //sample 1
 
         Bundle bundle = getIntent().getExtras();
         username = bundle.getString("username");
