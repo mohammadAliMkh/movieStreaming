@@ -85,7 +85,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         //check credit
         checkCredit();
 
-        // menu icon
+        // menu icon section
         menuIcon = findViewById(R.id.menu_icon_home);
         menuIcon.setOnClickListener(this);
 
@@ -150,7 +150,10 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
 
 
                     Long credit = Long.parseLong(response.trim());
+                    int j = 0;
                     int i = 0;
+                    int s = i + j;
+                    System.out.println(s);
                     editor = sharedPreferences.edit();
                     editor.putLong("total_credit" , credit);
                     editor.commit();
