@@ -31,6 +31,8 @@ public class CommentActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_commnet);
+        
+        // commnet part
 
         Bundle bundle = getIntent().getExtras();
         username = bundle.getString("username");
