@@ -44,7 +44,7 @@ public class CommentActivity extends AppCompatActivity {
         send_img = findViewById(R.id.send_comment_img);
         back_icon = findViewById(R.id.back_icon_comment);
 
-        // back icon of the comment
+        // toolbar section for back icon
         back_icon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
