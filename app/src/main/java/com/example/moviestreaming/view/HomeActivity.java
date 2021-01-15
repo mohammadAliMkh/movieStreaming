@@ -150,6 +150,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
 
 
                     Long credit = Long.parseLong(response.trim());
+                    int i = 0;
                     editor = sharedPreferences.edit();
                     editor.putLong("total_credit" , credit);
                     editor.commit();
