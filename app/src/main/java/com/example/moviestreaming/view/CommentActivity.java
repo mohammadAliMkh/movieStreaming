@@ -50,6 +50,9 @@ public class CommentActivity extends AppCompatActivity {
             public void onClick(View view) {
                 onBackPressed();
             }
+
+
+
         });
 
         //send the comment to the server
@@ -70,8 +73,13 @@ public class CommentActivity extends AppCompatActivity {
                     sendCommentToServer(comment);
                     comment_EDT.setText("");
 
+                    //this part is just for closing the android keyboard
+
+
                     InputMethodManager inputMethodManager = (InputMethodManager)getSystemService(INPUT_METHOD_SERVICE);
+
                     inputMethodManager.hideSoftInputFromWindow(view.getApplicationWindowToken(),0);
+                    System.out.println(comment);
 
                 }
             }
