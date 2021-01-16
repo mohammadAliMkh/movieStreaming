@@ -20,7 +20,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/colorAccent"
-        android:text="produced by MOHAMMAD ALI"
+        android:text="produced by mamk434"
         android:textSize="14sp"
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
