@@ -2,7 +2,7 @@ package com.example.moviestreaming.model;
 
 public class Comment {
 
-    String text, id ,validation ,date ,username;
+    String id ,text ,  validation , date , username;
 
     public Comment() {
     }
