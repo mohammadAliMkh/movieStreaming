@@ -6,6 +6,15 @@ public class Comment {
 
     public Comment() {
     }
+    
+    public Comment(String text , String id , String date , String username){
+        
+        this.text = text;
+        this.id = id;
+        this.date = date;
+        this.username = username;
+        
+    }
 
     public String getText() {
         return text;
