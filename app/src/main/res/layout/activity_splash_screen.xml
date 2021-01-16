@@ -9,8 +9,8 @@
     tools:context=".view.SplashScreenActivity">
 
     <com.airbnb.lottie.LottieAnimationView
-        android:layout_width="256dp"
-        android:layout_height="256dp"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
         android:layout_centerInParent="true"
         android:id="@+id/splashLottieFlies"
         app:lottie_autoPlay="true"
@@ -20,7 +20,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/colorAccent"
-        android:text="produced by mamk434"
+        android:text="produced by Mohammad Ali"
         android:textSize="14sp"
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
