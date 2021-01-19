@@ -43,7 +43,6 @@ public class HomeSliderAdapter extends PagerAdapter {
         name_txt.setText(sliders.get(position).getName());
         publish_txt.setText(sliders.get(position).getPublish());
         time_txt.setText(sliders.get(position).getTime());
-
         Picasso.get().load(sliders.get(position).getImage_link()).into(image_home_slider);
 
         container.addView(view);
